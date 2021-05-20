@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ordenhas",
+      "handler": "ordenhas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordenhas/count",
+      "handler": "ordenhas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordenhas/:id",
+      "handler": "ordenhas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ordenhas",
+      "handler": "ordenhas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ordenhas/:id",
+      "handler": "ordenhas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ordenhas/:id",
+      "handler": "ordenhas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

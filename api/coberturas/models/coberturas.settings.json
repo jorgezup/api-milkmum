@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coberturas",
+  "info": {
+    "name": "Coverage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "semen": {
+      "type": "boolean"
+    },
+    "birthEstimate": {
+      "type": "datetime"
+    },
+    "coverageDate": {
+      "type": "datetime"
+    },
+    "cria": {
+      "model": "crias",
+      "via": "cobertura"
+    },
+    "vacaId": {
+      "via": "coverages",
+      "model": "vacas"
+    }
+  }
+}

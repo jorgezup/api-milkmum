@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacas",
+  "info": {
+    "name": "Vacas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "born": {
+      "type": "datetime"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "milkings": {
+      "collection": "ordenhas",
+      "via": "vacaId"
+    },
+    "weights": {
+      "collection": "peso",
+      "via": "vacaId"
+    },
+    "coverages": {
+      "collection": "coberturas",
+      "via": "vacaId"
+    }
+  }
+}

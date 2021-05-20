@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordenhas",
+  "info": {
+    "name": "Milking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "firstMilking": {
+      "type": "float"
+    },
+    "secondMilking": {
+      "type": "float"
+    },
+    "vacaId": {
+      "via": "milkings",
+      "model": "vacas"
+    }
+  }
+}

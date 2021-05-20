@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pesos",
+  "info": {
+    "name": "Weight",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "weight": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "vacaId": {
+      "via": "weights",
+      "model": "vacas"
+    }
+  }
+}

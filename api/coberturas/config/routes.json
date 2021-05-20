@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coberturas",
+      "handler": "coberturas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coberturas/count",
+      "handler": "coberturas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coberturas/:id",
+      "handler": "coberturas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coberturas",
+      "handler": "coberturas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coberturas/:id",
+      "handler": "coberturas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coberturas/:id",
+      "handler": "coberturas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
